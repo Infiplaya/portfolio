@@ -6,13 +6,19 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 flex flex-col justify-start">
       <h1 className="text-4xl text-black font-medium dark:text-white">
         Projects
       </h1>
       <div className="mt-7 flex flex-row gap-5">
-        <div className="relative w-1/3">
-          <Image src={homepageImage} alt="homepage" className="rounded"></Image>
+        <div className="relative h-48 w-64">
+          <Image
+            src={homepageImage}
+            alt="blackjack game"
+            className="rounded"
+            objectFit="contain"
+            layout="fill"
+          ></Image>
         </div>
         <div>
           <Link href="https://portoliotest-nsm60juag-infiplaya.vercel.app/">
@@ -32,8 +38,14 @@ export default function Projects() {
         </div>
       </div>
       <div className="mt-7 flex flex-row gap-5">
-        <div className="relative w-1/3">
-          <Image src={biopageImage} alt="biopage" className="rounded"></Image>
+      <div className="relative h-48 w-64">
+          <Image
+            src={biopageImage}
+            alt="blackjack game"
+            className="rounded"
+            objectFit="contain"
+            layout="fill"
+          ></Image>
         </div>
         <div>
           <Link href="https://biopage-dnt5ghdr3-infiplaya.vercel.app/">
@@ -53,11 +65,13 @@ export default function Projects() {
         </div>
       </div>
       <div className="mt-7 flex flex-row gap-5">
-        <div className="relative w-1/3">
+      <div className="relative h-48 w-64">
           <Image
             src={blackjackImage}
             alt="blackjack game"
             className="rounded"
+            objectFit="contain"
+            layout="fill"
           ></Image>
         </div>
         <div>

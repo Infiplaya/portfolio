@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Header />
       <main className="flex flex-col align-middle justify-center items-center m-20">
         <ProfileImage />
-        <h1 className="text-4xl"></h1>
+        <h1 className="text-3xl">Paweł Sobaniec</h1>
         <Navbar />
         <section className="flex flex-col justify-start m-5 max-w-5xl">
           <About />

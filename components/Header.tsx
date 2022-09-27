@@ -34,6 +34,6 @@ export default function Header() {
     }
   };
   return (
-    <header className="flex justify-end m-5">{renderThemeChanger()}</header>
+    <header className="flex justify-end m-5"><div className="m-5 dark:bg-zinc-600 px-3 py-2 rounded dark:hover:bg-zinc-400 bg-zinc-400 hover:bg-zinc-600">{renderThemeChanger()}</div></header>
   );
 }

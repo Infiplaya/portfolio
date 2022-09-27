@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <ProfileImage />
         <h1 className="text-3xl text-center">Paweł Sobaniec</h1>
         <Navbar />
-        <section className="flex flex-col justify-start m-5 max-w-sm md:max-w-2xl">
+        <section className="flex flex-col justify-start m-5 max-w-sm sm:max-w-3xl">
           <About />
           <Projects />
           <p className="mt-10">

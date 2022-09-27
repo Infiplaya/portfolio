@@ -17,23 +17,27 @@ export default function Header() {
 
     if (currentTheme === "dark") {
       return (
-        <SunIcon
-          className="w-7 h-7"
-          role="button"
-          onClick={() => setTheme("light")}
-        />
+        <button className="bg-zinc-600 p-2 rounded-md m-5">
+          <SunIcon
+            className="w-7 h-7"
+            role="button"
+            onClick={() => setTheme("light")}
+          />
+        </button>
       );
     } else {
       return (
-        <MoonIcon
-          className="w-7 h-7"
-          role="button"
-          onClick={() => setTheme("dark")}
-        />
+        <button className="bg-zinc-400 p-2 rounded-md m-5">
+          <MoonIcon
+            className="w-7 h-7"
+            role="button"
+            onClick={() => setTheme("dark")}
+          />
+        </button>
       );
     }
   };
   return (
-    <header className="flex justify-end m-5"><div className="m-5 dark:bg-zinc-600 px-3 py-2 rounded dark:hover:bg-zinc-400 bg-zinc-400 hover:bg-zinc-600">{renderThemeChanger()}</div></header>
+    <header className="flex justify-end m-5">{renderThemeChanger()}</header>
   );
 }

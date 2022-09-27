@@ -40,7 +40,7 @@ export default function Projects() {
           <Image
             alt={`Biopage`}
             src={biopageImage}
-            className="rounded brightness-75 hover:brightness-100 cursor-pointer"
+            className="rounded brightness-75 hover:brightness-100 w-20 cursor-pointer"
             width={384}
             height={240}
           ></Image>

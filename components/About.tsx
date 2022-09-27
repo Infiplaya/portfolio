@@ -25,7 +25,7 @@ export default function About() {
       <p className="mt-3">
         Contact me at{" "}
         <Link href="mailto:pawelsobaniec6@gmail.com">
-          <a className="dark:text-blue-500 text-blue-700">
+          <a className="dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
             pawelsobaniec6@gmail.com
           </a>
         </Link>

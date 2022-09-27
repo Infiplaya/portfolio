@@ -34,6 +34,6 @@ export default function Header() {
     }
   };
   return (
-    <header className="flex justify-end m-10">{renderThemeChanger()}</header>
+    <header className="flex justify-end m-5">{renderThemeChanger()}</header>
   );
 }

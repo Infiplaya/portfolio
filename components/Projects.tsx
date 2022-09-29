@@ -7,23 +7,24 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div className="mt-10 flex flex-col">
-      <h1 className="font-medium text-3xl text-black dark:text-white">
+      <h1 className="font-semibold text-3xl text-black dark:text-white">
         Projects
       </h1>
-      <div className="mt-10 flex gap-5">
+      <div className="mt-5 flex gap-5">
         <Link href="https://portoliotest.vercel.app/">
-          <Image
-            alt={`Homepage`}
-            src={homepageImage}
-            className="rounded brightness-75 hover:brightness-100 cursor-pointer"
-            width={384}
-            height={240}
-          ></Image>
+          <a className="w-1/2">
+            <Image
+              alt={`Homepage`}
+              src={homepageImage}
+              className="rounded brightness-75 hover:brightness-100 cursor-pointer"
+              width={384}
+              height={240}
+            ></Image>
+          </a>
         </Link>
-
-        <div className="flex flex-col gap-4">
+        <div className="w-1/2 flex flex-col gap-4">
           <Link href="https://portoliotest.vercel.app/">
-            <h1 className="cursor-pointer text-3xl font-semibold dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
+            <h1 className="cursor-pointer text-2xl font-semibold dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
               Homepage
             </h1>
           </Link>
@@ -37,18 +38,19 @@ export default function Projects() {
       </div>
       <div className="mt-10 flex gap-5">
         <Link href="https://biopage-rho.vercel.app/">
-          <Image
-            alt={`Biopage`}
-            src={biopageImage}
-            className="rounded brightness-75 hover:brightness-100 w-20 cursor-pointer"
-            width={384}
-            height={240}
-          ></Image>
+          <a className="w-1/2">
+            <Image
+              alt={`Biopage`}
+              src={biopageImage}
+              className="rounded brightness-75 hover:brightness-100 w-20 cursor-pointer"
+              width={384}
+              height={240}
+            ></Image>
+          </a>
         </Link>
-
-        <div className="flex flex-col gap-4">
+        <div className="w-1/2 flex flex-col gap-4">
           <Link href="https://biopage-rho.vercel.app/">
-            <h1 className="cursor-pointer text-3xl font-semibold dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
+            <h1 className="cursor-pointer text-2xl font-semibold dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
               Biopage
             </h1>
           </Link>
@@ -62,17 +64,19 @@ export default function Projects() {
       </div>
       <div className="mt-10 flex gap-5">
         <Link href="https://blackjack-eobu.vercel.app/">
-          <Image
-            alt={`Blackjack`}
-            src={blackjackImage}
-            className="rounded brightness-75 hover:brightness-100 cursor-pointer"
-            width={384}
-            height={240}
-          ></Image>
+          <a className="w-1/2">
+            <Image
+              alt={`Blackjack`}
+              src={blackjackImage}
+              className="rounded brightness-75 hover:brightness-100 cursor-pointer"
+              width={384}
+              height={240}
+            ></Image>
+          </a>
         </Link>
-        <div className="flex flex-col gap-4">
+        <div className="w-1/2 flex flex-col gap-4">
           <Link href="https://blackjack-eobu.vercel.app/">
-            <h1 className="cursor-pointer text-3xl font-semibold dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
+            <h1 className="cursor-pointer text-2xl font-semibold dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
               Blackjack game
             </h1>
           </Link>

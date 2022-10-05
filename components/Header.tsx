@@ -17,7 +17,7 @@ export default function Header() {
 
     if (currentTheme === "dark") {
       return (
-        <button className="bg-zinc-600 p-2 rounded-md m-5">
+        <button className="bg-zinc-600 p-2 rounded-md m-5 hover:text-yellow-500">
           <SunIcon
             className="w-7 h-7"
             role="button"
@@ -27,7 +27,7 @@ export default function Header() {
       );
     } else {
       return (
-        <button className="bg-zinc-400 p-2 rounded-md m-5">
+        <button className="bg-zinc-400 p-2 rounded-md m-5 hover:text-blue-500">
           <MoonIcon
             className="w-7 h-7"
             role="button"

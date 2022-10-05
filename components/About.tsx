@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function About() {
   return (
     <div>
-      <h1 className="text-4xl dark:text-white text-black font-semibold">
+      <h1 className="text-4xl dark:text-white text-black font-semibold  tracking-wider">
         Hello!
       </h1>
-      <p className="mt-5 text-left">
+      <p className="mt-5 text-justify leading-relaxed">
         {" "}
         I’m Paweł, a passionate amateur programmer who wants to learn as much as
         I can about web development and build cool apps! I’ve finished{" "}

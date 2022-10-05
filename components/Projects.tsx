@@ -28,7 +28,7 @@ export default function Projects() {
               Grab A Food
             </h1>
           </Link>
-          <p className="mb-auto">Web application that will help you try new food</p>
+          <p className="mb-auto">Web application that will help you try new food!</p>
           <Link href="https://github.com/Infiplaya/grabafood">
             <a className="dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
               Github

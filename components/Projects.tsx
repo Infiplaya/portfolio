@@ -1,9 +1,8 @@
 import Image from "next/image";
-import blackjackImage from "../public/blackjack.png";
-import quizImage from "../public/quiz.png"
-import homepageImage from "../public/homepage.png";
+import quizImage from "../public/quiz.png";
+import foodappImage from "../public/foodapp.png";
 import Link from "next/link";
-import portfolioImage from "../public/portfolio.png"
+import portfolioImage from "../public/portfolio.png";
 
 export default function Projects() {
   return (
@@ -12,11 +11,11 @@ export default function Projects() {
         Projects
       </h1>
       <div className="mt-5 flex gap-10">
-        <Link href="https://portoliotest.vercel.app/">
+        <Link href="https://grabafood.vercel.app/">
           <a className="w-1/2">
             <Image
-              alt={`Homepage`}
-              src={homepageImage}
+              alt={`GrabAFood`}
+              src={foodappImage}
               className="rounded brightness-75 hover:brightness-100 cursor-pointer"
               width={384}
               height={240}
@@ -24,13 +23,13 @@ export default function Projects() {
           </a>
         </Link>
         <div className="w-1/2 flex flex-col gap-5">
-          <Link href="https://portoliotest.vercel.app/">
+          <Link href="https://grabafood.vercel.app/">
             <h1 className="cursor-pointer text-2xl font-semibold dark:text-blue-500 text-blue-700">
-              Homepage
+              Grab A Food
             </h1>
           </Link>
           <p className="mb-auto">Description</p>
-          <Link href="https://github.com/Infiplaya/portoliotest">
+          <Link href="https://github.com/Infiplaya/grabafood">
             <a className="dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
               Github
             </a>
@@ -38,7 +37,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="mt-10 flex gap-10">
-        <Link href="https://biopage-rho.vercel.app/">
+        <Link href="https://quizgame-1xt4.vercel.app/">
           <a className="w-1/2">
             <Image
               alt={`Quiz`}
@@ -50,7 +49,7 @@ export default function Projects() {
           </a>
         </Link>
         <div className="w-1/2 flex flex-col justify-between gap-4">
-          <Link href="https://biopage-rho.vercel.app/">
+          <Link href="https://quizgame-1xt4.vercel.app/">
             <h1 className="cursor-pointer text-2xl font-semibold dark:text-blue-500 text-blue-700">
               Trivia quiz
             </h1>

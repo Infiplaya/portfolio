@@ -67,7 +67,7 @@ export default function Projects() {
         <Link href="https://portfolio-infiplaya.vercel.app/">
           <a className="w-1/2">
             <Image
-              alt={`Portfolio`}v
+              alt={`Portfolio`}
               src={portfolioImage}
               className="rounded brightness-75 hover:brightness-100 cursor-pointer"
               width={384}

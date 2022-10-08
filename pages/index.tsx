@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Header />
       <main className="flex flex-col items-center">
         <ProfileImage />
-        <h1 className="text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-pink-500 to-indigo-300 background-animate">
+        <h1 className="text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-sky-500 to-lime-600 background-animate">
           Paweł Sobaniec
         </h1>
         <Navbar />

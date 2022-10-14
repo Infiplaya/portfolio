@@ -6,7 +6,7 @@ After grasping the basics of React and learning about NextJS, I decided that I w
 
 ## Walkthrough
 This is the preview:
-![preview](blob:https://vercel.com/aa340db5-cc45-4f72-9b84-8e40ea1b3d75)
+![preview](./public/profpic.png)
 
 Main idea was to keep it simple. I did not used flashy things, because I feel like I did not need them.
 

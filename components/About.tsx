@@ -1,62 +1,37 @@
 import Link from "next/link";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   return (
-    <div>
-      <h1 className="text-4xl dark:text-white text-black font-semibold  tracking-wider">
+    <div className="dark:text-gray-100 text-gray-800 mt-10 lg:mt-20 leading-relaxed">
+      <h1 className="text-4xl dark:text-lime-300 text-blue-900 font-bold tracking-wider">
         Hello!
       </h1>
-      <p className="mt-5 text-start leading-relaxed text-lg">
+      <article className="mt-5 prose-zinc prose-lg lg:prose-xl">
         {" "}
-        I’m Paweł, a passionate amateur programmer who wants to learn as much as
-        I can about web development and build cool apps! I’ve finished{" "}
-        <Link
-          href={`https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0`}
-        >
-          <a className="font-bold text-sky-500 hover:text-sky-600 ">CS50</a>
-        </Link>{" "}
-        - Harvard’s introductory course in computer science where I learned many
-        interesting things about programming world, and did many hard but fun
-        problems, and also{" "}
-        <Link href={`https://cs50.harvard.edu/python/2022/`}>
-          <a className="font-bold text-sky-500 hover:text-sky-600">CS50 Python</a>
-        </Link>{" "}
-        - Harvard’s introductory course for Python. I’m deeply interested in web
-        development technologies such as{" "}
-        <a className="font-bold underline decoration-yellow-300 decoration-4 underline-offset-4">
-          JavaScript
-        </a>
-        ,{" "}
-        <a className="font-bold underline decoration-sky-700 decoration-4 underline-offset-4">
-          CSS
-        </a>
-        ,{" "}
-        <a className="font-bold underline decoration-sky-500 decoration-4 underline-offset-4">
-          React
-        </a>
-        ,{" "}
-        <a className="font-bold underline decoration-indigo-500 decoration-4 underline-offset-4">
-          NextJS
-        </a>
-        , and{" "}
-        <a className="font-bold underline decoration-pink-500 decoration-4 underline-offset-4">
-          tailwind CSS
-        </a>
-        , and using them to build fun websites and solve problems.
-      </p>
-      <p className="mt-5 text-left text-lg">
+        I am Paweł, a self-taught programmer who wants to learn a lot
+        about web development and build cool and beautiful stuff! I have studied
+        cognitive science but discovered a true passion for programming and
+        decided that the path is for me. Currently deeply interested in Web
+        Development, especially the front end. Every day I improve my knowledge
+        and skills by building projects and learning.
+      </article>
+      <article className="mt-5 prose-zinc  lg:prose-lg">
         {" "}
-        Besides programming, I enjoy reading books, listening to my favorite
-        music and meeting with my friends.
-      </p>
-      <p className="mt-3 text-lg">
-        Contact me at{" "}
-        <Link href="mailto:pawelsobaniec6@gmail.com">
-          <a className="dark:text-blue-500 text-blue-700 dark:hover:text-blue-700 hover:text-blue-300">
-            pawelsobaniec6@gmail.com
-          </a>
-        </Link>
-      </p>
+        Besides programming, just a guy who likes to read books, listen to my
+        favorite music, and hang out with friends.
+      </article>
+      <div className="flex mt-10 w-20 gap-4 justify-center text-2xl  mx-auto">
+        <a href="mailto:pawelsobaniec6@gmail.com" >
+          <FontAwesomeIcon icon={faEnvelope} role={`button`} className={`p-2 dark:hover:bg-zinc-800 hover:bg-gray-200 rounded-full`} />
+        </a>
+
+        <a href="https://github.com/Infiplaya" target={`_blank`}>
+          <FontAwesomeIcon icon={faGithub} role={`button`} className={`p-2 dark:hover:bg-zinc-800 hover:bg-gray-200 rounded-full`}/>
+        </a>
+      </div>
     </div>
   );
 }

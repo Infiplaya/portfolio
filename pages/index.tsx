@@ -1,39 +1,35 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/Header";
 import ProfileImage from "../components/ProfileImage";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
-import Projects from "../components/Projects";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Paweł Sobaniec</title>
       </Head>
-      <Header />
-      <main className="flex flex-col items-center">
-        <ProfileImage />
-        <h1 className="text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-sky-500 to-lime-600 background-animate">
-          Paweł Sobaniec
-        </h1>
+      <motion.div
+        className="box"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
         <Navbar />
-        <section className="flex flex-col justify-start m-5 max-w-sm sm:max-w-3xl">
-          <About />
-          <Projects />
-          <p className="mt-10">
-            See more things that I worked on at my{" "}
-            <Link href="https://github.com/Infiplaya">
-              <a className="text-blue-500 dark:text-blue-500 dark:hover:text-blue-700 hover:text-blue-300">
-                GitHub profile
-              </a>
-            </Link>
-          </p>
-        </section>
-      </main>
-    </div>
+        <main className="flex flex-col lg:px-64 px-10 items-center mx-auto container h-screen">
+          <ProfileImage />
+          <section className="flex flex-col justify-start">
+            <About />
+          </section>
+        </main>
+      </motion.div>
+    </>
   );
 };
 

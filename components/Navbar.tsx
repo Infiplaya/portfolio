@@ -7,9 +7,9 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   return (
     <div>
-      <nav className="flex w-full items-center align-middle p-5">
+      <nav className="flex w-full items-center justify-evenly align-middle py-5 px-20 shadow dark:shadow-zinc-800">
         <ul
-          className="flex w-full -mr-10 items-center justify-center gap-3 text-lg sm:text-xl font-mono uppercase
+          className="flex w-full items-center justify-center gap-3 text-lg sm:text-xl font-mono font-semibold uppercase
             "
         >
           <Link href={`/`}>
@@ -37,7 +37,7 @@ export default function Navbar() {
         <FontAwesomeIcon
           icon={theme === "dark" ? faSun : faMoon}
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className={`border-gray-300 text-3xl text-blue-600 dark:border-gray-700 dark:text-yellow-400`}
+          className={`border-gray-300 text-2xl ml-auto text-blue-600 dark:border-gray-700 dark:text-yellow-400`}
           role={`button`}
         />
       </nav>

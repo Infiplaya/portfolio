@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function About() {
   return (
     <div className="dark:text-gray-100 text-gray-800 mt-10 lg:mt-20 leading-relaxed">
-      <h1 className="text-4xl dark:text-lime-300 text-blue-900 font-bold tracking-wider">
+      <h1 className="text-3xl font-bold tracking-wider">
         Hello!
       </h1>
       <article className="mt-5 prose-zinc prose-lg lg:prose-xl">
@@ -23,7 +23,7 @@ export default function About() {
         Besides programming, just a guy who likes to read books, listen to my
         favorite music, and hang out with friends.
       </article>
-      <div className="flex mt-10 w-20 gap-4 justify-center text-2xl  mx-auto">
+      <div className="flex mt-10 w-20 gap-4 justify-center text-2xl mx-auto mb-10">
         <a href="mailto:pawelsobaniec6@gmail.com" >
           <FontAwesomeIcon icon={faEnvelope} role={`button`} className={`p-2 dark:hover:bg-zinc-800 hover:bg-gray-200 rounded-full`} />
         </a>
